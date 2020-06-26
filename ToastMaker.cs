@@ -1,10 +1,10 @@
 namespace factory
 {
-    public class CakeShop : Bakery
+    public class ToastMaker : Bakery
     {
         public override IBread CreateBread(string name)
         {
-            return new Cake(name);
+            return new Toast(name);
         }
     }
 }

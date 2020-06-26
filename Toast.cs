@@ -1,15 +1,15 @@
 namespace factory
 {
-    internal class Toast : IBread
+    public class Toast : IBread
     {
         public string Name { get; set; }
-        public string GetBreadName()
-        {
-            return this.Name;
-        }
         public Toast(string name)
         {
             Name = name;
+        }
+        public string GetBreadName()
+        {
+            return $"Toast: {this.Name}";
         }
     }
 }
