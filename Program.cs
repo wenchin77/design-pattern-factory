@@ -9,8 +9,8 @@ namespace factory
         {
             Console.WriteLine("Let's make some bread!");
             List<IBread> breadList = new List<IBread>();
-            var cakeMaker = new CakeMaker();
-            var toastMaker = new ToastMaker();
+            var cakeMaker = new CakeFactory();
+            var toastMaker = new ToastFactory();
             var bread = toastMaker.CreateBread("Peanut butter toast");
             var bread1 = toastMaker.CreateBread("Chocolate toast");
             var bread2 = cakeMaker.CreateBread("Cheesecake");

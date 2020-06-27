@@ -1,6 +1,6 @@
 namespace factory
 {
-    public class ToastMaker : Bakery
+    public class ToastFactory : Bakery
     {
         public override IBread CreateBread(string name)
         {
